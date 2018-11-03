@@ -1,0 +1,14 @@
+<form action="{% url 'polls:save_goods' user.id %}" method="post">
+  {% csrf_token %}
+    商品名称：<input type="text" name="good_name"><br>
+    商品简称：<select name="good_sort" >
+        <option value="book">Book</option>
+        <option value="food">Food</option>
+        <option value="close">Close</option>
+        <option value="zoo">Zoo</option>
+        <option value="others">others</option>
+    </select><br>
+    商品单价：<input type="text" name="good_price"><br>
+    商品库存：<input type="text" name="sum"><br>
+    <input type="submit" value="提交">
+</form>

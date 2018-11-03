@@ -1,0 +1,11 @@
+
+<form action="{% url 'polls:change_1' user.id %}" method="post">
+    {% csrf_token %}
+    选择要修改的商品：
+    <select name="goods_change" >
+        {% for i in user.users.all %}
+        <option value="{{i.id}}">{{ i.goods_name }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="修改">
+</form>

@@ -1,0 +1,6 @@
+<form action="{% url 'polls:found_3' user.id %}" method="post">
+    {% csrf_token %}
+    <p>请输入新密码</p>
+    <input type="text" name="user_pwd">
+    <input type="submit" value="提交">
+</form>

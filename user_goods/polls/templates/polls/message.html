@@ -1,0 +1,12 @@
+
+<h1>{{ user.name }}的账户信息</h1>
+<p>姓名：{{ user.name }}</p>
+<p>账号：{{ user.zh }}</p>
+<p>密码：{{ user.password }}</p>
+<p>密保：{{ user.question }}</p>
+<p>答案：{{ user.answer }}</p>
+<p>余额：{{ user.yue }}</p>
+
+<a href="{% url 'polls:message_3' user.id %}">返回上一级</a>
+
+

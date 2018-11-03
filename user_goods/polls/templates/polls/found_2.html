@@ -1,0 +1,6 @@
+<form action="{% url 'polls:found_2' user.id %}" method="post">
+        {% csrf_token %}
+        <p>请输入密保答案:{{ user.question }}</p>
+        <input type="text" name="user_answer">
+        <input type="submit" value="提交">
+</form>

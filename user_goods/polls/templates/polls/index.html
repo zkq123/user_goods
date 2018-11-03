@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" >
+
+<p>用户注册</p>
+<a href="{% url 'polls:vote' %}">点击注册</a>
+<p>用户登录</p>
+<a href="{% url 'polls:register' %}">用户登录</a>
+<p>找回密码</p>
+<a href="{% url 'polls:found' %}">点击获取密码</a>
+<p>浏览商品</p>
+<a href="{% url 'polls:look' %}">点击浏览商品</a>

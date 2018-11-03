@@ -1,0 +1,7 @@
+<form action="{% url 'polls:denglu' %}" method="post">
+    {% csrf_token %}
+    账号：<input type="text" name="user_zh">
+    密码：<input type="text" name="user_password">
+        <input type="submit" value="登录">
+
+</form>

@@ -1,0 +1,5 @@
+<form action="{% url 'polls:message_2_1' user.id%}" method="post">
+    {% csrf_token %}
+    请输入充值金额：<input type="text" name="user_yue">
+    <input type="submit" value="充值">
+</form>

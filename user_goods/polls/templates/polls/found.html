@@ -1,0 +1,10 @@
+<form action="{% url 'polls:found_1'%}" method="post">
+   {% csrf_token %}
+    <p>请输入账号</p>
+    <input type="text" name="user_zh">
+    <p>请输入姓名</p>
+    <input type="text" name="user_name"><br>
+    <input type="submit" value="提交">
+</form>
+
+

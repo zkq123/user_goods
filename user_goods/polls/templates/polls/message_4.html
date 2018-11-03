@@ -1,0 +1,8 @@
+<form action="{% url 'polls:message_4_1' user.id %}" method="post">
+    {% csrf_token %}
+    <p>请输入原密码</p>
+    <input type="text" name="user_password"><br>
+    <p>请输入新密码</p>
+    <input type="text" name="password_1">
+    <input type="submit" value="确认修改">
+</form>

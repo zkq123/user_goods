@@ -1,0 +1,9 @@
+<form action="{% url 'polls:xxxx' %}" method="post">
+    {% csrf_token %}
+    账号：<input type="text" name="user_zh"><br>
+    姓名：<input type="text" name="user_name"><br>
+    密码：<input type="text" name="user_password"><br>
+    密保：<input type="text" name="user_question"><br>
+    答案：<input type="text" name="user_answer"><br>
+    <input type="submit" value="提交">
+</form>

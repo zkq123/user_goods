@@ -1,0 +1,10 @@
+{% for goods in user.users.all %}
+    <p>商品名称:{{ goods.goods_name }}</p>
+    <p>商品编号:{{ goods.goods_bh }}</p>
+    <p>商品类别:{{ goods.goods_sort }}</p>
+    <p>商品单价:{{ goods.goods_price }}</p>
+    <p>商品发布人:{{ user.name }}</p>
+    <p>商品发布时间:{{ goods.publish_date }}</p>
+    <p>=========================================================</p>
+{% endfor %}
+<a href="{% url 'polls:message_3' user.id %}">点击返回</a>

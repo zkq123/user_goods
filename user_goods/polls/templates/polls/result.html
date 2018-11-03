@@ -1,0 +1,8 @@
+<h1> Successfully </h1>
+<a href="{% url 'polls:message' user.id %}">查看账户信息</a><br>
+<a href="{% url 'polls:message_2' user.id %}">进行金额充值</a><br>
+<a href="{% url 'polls:message_4' user.id %}">修改密码</a><br>
+<a href="{% url 'polls:add_goods' user.id%}">点击添加商品</a><br>
+<a href="{% url 'polls:check' user.id %}">点击查看所发布商品信息</a><br>
+<a href="{% url 'polls:change' user.id %}">点击进行商品修改</a><br>
+<a href="{% url 'polls:check_change' user.id %}">点击查看商品修改记录</a><br>
